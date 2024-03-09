@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100dvh;
+            width: 100%;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        .balls{
+            position: absolute;
+            height: 330px;
+        }
+
+        div.balls>img {
+            animation: jump 1s infinite alternate;
+            animation-delay: var(--i);
+        }
+        @keyframes jump{
+            to{transform: translateY(-200px);}
+        }
+    </style>
+    <div class="balls">
+
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: 0s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: .25s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: .5s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: 1s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: 1.12s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: 1.25s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: 1.5s">
+        <img src="https://w7.pngwing.com/pngs/33/272/png-transparent-football-ball-game-soccer-ball-soccer-ball-artwork-miscellaneous-sport-sports-equipment-thumbnail.png" style="--i: 1.75s">
+
+
+    </div>
+</body>
+</html>
